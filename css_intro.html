@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
 	<style>
 		*{
 			margin: 1px;
@@ -26,7 +27,19 @@
 		
 	</style>
 </head>
-<body>
+<body class="css-intro">
+	<nav>
+            <div class="logo">
+                <h3>Oneteam</h3>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="register.html">Register</a></li>
+				<li><a href="css_intro.html">CSS_Intro</a></li>
+            </ul>
+        </nav>
 	<h1 style="text-align: center; font-style: italic; font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;">Introduction to CSS</h1>
 	<section id="features">
 		<h2>Css Features</h2>
@@ -50,5 +63,28 @@
 		</div>
 		
 	</section>
+	<section id="box-model">
+    <h2>CSS Box Model</h2>
+
+    <div class="margin">
+        Margin
+        <div class="border">
+            Border
+            <div class="padding">
+                Padding
+                <div class="content">
+                    Content
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="description">
+        <p><strong>Content:</strong> The actual text or image inside the element.</p>
+        <p><strong>Padding:</strong> Space between the content and the border.</p>
+        <p><strong>Border:</strong> Surrounds the padding and content.</p>
+        <p><strong>Margin:</strong> Space outside the border that separates elements.</p>
+    </div>
+</section>
+	
 </body>
 </html>

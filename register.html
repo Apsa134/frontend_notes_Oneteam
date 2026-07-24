@@ -4,14 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="register-page">
 	<header>
 			<nav>
-				<!-- navigation -->
-				<a href = "about_us.html">About Us</a> 
-				<a href = "services.html">Services</a>
-			</nav>
+            <div class="logo">
+                <h3>Oneteam</h3>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="register.html">Register</a></li>
+				<li><a href="css_intro.html">CSS_Intro</a></li>
+            </ul>
+        </nav>
 		</header>
 	<main>
 			<form >
@@ -29,9 +37,9 @@
 				</div>
 				<div>
 					<label for="DOB">DOB</label>
-					<input type="date" name="DOB" id="DOB " placeholder="select your DOB">
+					<input type="date" name="DOB" id="DOB ">
 				</div>
-				<div>
+				<div class="gender">
 					<label >Gender</label>
 					<label >Male</label>
 					<input type="radio" name="gender" value="male">
@@ -41,7 +49,7 @@
 					<input type="radio" name="gender" value="other">
 				</div>
 				<div>
-					<label for="age"></label>
+					<label for="age">Age</label>
 					<input type="number" name="age" id="age" min="18" max="60" value="18">
 				</div>
 				<div>
