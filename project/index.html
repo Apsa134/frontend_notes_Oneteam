@@ -19,28 +19,24 @@
 <body>
 
     <main class="login-page">
-		<form >
 			<div class="login-card">
 
 				<h1>Welcome Back</h1>
 				<p>Login to continue</p>
-
+			<form id="loginForm">
 				<div class="input-box">
 					<i class="fa-solid fa-user"></i>
-					<input type="text" placeholder="Username" required>
+					<input type="text" id="username" placeholder="Username" required>
 				</div>
 
 				<div class="input-box">
 					<i class="fa-solid fa-lock"></i>
-					<input type="password" placeholder="Password" required>
+					<input type="password" id="password" placeholder="Password" required>
 				</div>
-
-				<button type="submit" class="login-btn">Login</button>
-
-			</div>
-		</form>
+				<a href="home.html" class="login-btn">Login</a>
+			</form>
+		</div>
+		
     </main>
-
-    <script src="js/login.js"></script>
 </body>
 </html>
