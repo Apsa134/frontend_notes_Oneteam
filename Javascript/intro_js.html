@@ -9,13 +9,33 @@
 	<h1 id="main-heading">Introduction To Javascript</h1>
 	<button onclick="changeText()">Click me</button>
 	<button onclick="alert('Dont click that!!!')">Click</button>
+<form action="">
+	<button onclick="agecheck()">Check Eligiblity</button>
+	<a href="datatype.js" onclick="return confirmLogout">Go</a>
+</form>
+
 	<script>
-		let name = "Developer"
-		console.log(`Hai am  a ${name}`)
+		let name = "John Wick"
+		console.log(`Hiii ${name}`)
 
 	function changeText(){
 		document.getElementById("main-heading").innerText = "Why you click!!"
 		document.getElementById("main-heading").style.color = "Violet"
+	}
+
+	function agecheck(){
+		// let a = document.getElementById("age").value
+		let a = prompt("Enter your age")
+		if(a>=18){
+			alert("Eligible...vote wisely!!!")
+		}
+		else{
+			alert("Not eligible...go and back later...")
+		}
+	}
+	function confirmLogout(){
+		let status = confirm("Do you want to go??")
+		return status
 	}
 	</script>
 </body>
